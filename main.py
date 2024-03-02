@@ -7,7 +7,7 @@ from openai import OpenAI
 import requests
 import os
 import sys
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='')
 
 if len(sys.argv) > 1:                                                                   # Is there a URL argument? If so, set url to the arg.
    url = sys.argv[1] 
