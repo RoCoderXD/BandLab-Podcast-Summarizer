@@ -7,7 +7,9 @@ from openai import OpenAI
 import requests
 import os
 import sys
-client = OpenAI(api_key='')
+from dotenv import load_dotenv
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_KEY"))
 
 if len(sys.argv) > 1:                                                                   # Is there a URL argument? If so, set url to the arg.
    url = sys.argv[1] 
